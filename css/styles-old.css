@@ -9,6 +9,7 @@ body {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 ul, ol {
@@ -35,11 +36,30 @@ p {
 margin: 0;
 }
 
+
+button {
+    cursor: pointer;
+}
+
 /* Container section*/
+
 .container {
-    max-width: 1158px ;
-    padding: 0 15px;
+    max-width: 320px;
     margin: 0 auto;
+    padding: 0 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+        padding: 0 15px;
+    }
 }
 
 /* Header section*/
@@ -71,6 +91,9 @@ margin: 0;
 .header-container {
   display: flex;
   align-items: center;
+
+ justify-content: space-between;
+
 }
 
 .header-nav {
@@ -951,3 +974,15 @@ input[type="checkbox"]:checked + .formbox-agreement-label > .formbox-checkbox-ok
   }
 }
 
+/*new*/
+
+.mobile-menu-button{
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.mobile-menu-icon{
+  display: block;
+  fill:#2F2F37;
+}
